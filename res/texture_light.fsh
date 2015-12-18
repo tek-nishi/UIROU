@@ -1,0 +1,14 @@
+//
+// テクスチャ+ライティング
+//
+
+uniform sampler2D sampler;
+
+varying lowp vec4 dstColor;
+varying lowp vec4 dstShine;
+varying mediump vec2 uv_out;
+
+
+void main() {
+  gl_FragColor = texture2D(sampler, uv_out) * dstColor + dstShine;
+}

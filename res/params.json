@@ -1,0 +1,2982 @@
+{
+  "game": {
+    "margin": 20,
+    
+    "camera_angle":  45,
+    "camera_near_z": 10,
+    "camera_far_z":  1000,
+
+    "planet_radius": 60,
+
+    "clear_color": [ 0.0, 0.0, 0.0, 1.0 ],
+
+    "lights": [
+      {
+        "pos":      [ 0.0, 50.0, 500.0 ],
+        "diffuse":  [ 0.25, 0.25, 0.25 ],
+        "ambient":  [ 0.3, 0.3, 0.3 ],
+        "specular": [ 0.55, 0.55, 0.55 ]
+      },
+      {
+        "pos":      [ 0.0, -50.0, 500.0 ],
+        "diffuse":  [ 0.9, 0.9, 0.9 ],
+        "ambient":  [ 0.0, 0.0, 0.0 ],
+        "specular": [ 0.3, 0.3, 0.3 ]
+      },
+      {
+        "pos":      [ 0.0, 50.0, 500.0 ],
+        "diffuse":  [ 0.0, 0.0, 0.0 ],
+        "ambient":  [ 0.0, 0.0, 0.0 ],
+        "specular": [ 0.0, 0.0, 0.0 ]
+      }
+    ],
+
+    "camera_eye": [ 0.0, 0.0, -40 ],
+
+    "start_camera": {
+      "type": "quad_inout",
+      "duration": 5.0,
+      "end_z": -170.0,
+      "end_rot": [ 54, 1.0, 0.0, -0.8 ]
+    },
+
+    "font_vertex": 30000
+  },
+
+  
+  "title": {
+    "interval": 0.25,
+
+    "preface_mix_in": {
+      "type": "linear",
+      "duration": 1.5,
+      "start": 40,
+      "end": 0
+    },
+    
+    "preface_mix_out": {
+      "type": "linear",
+      "duration": 1.4,
+      "start": 0,
+      "end": 42
+    },
+
+    "preface_disp_time": {
+      "type": "linear",
+      "duration": 5,
+      "start": 5,
+      "end": 2.5
+    },
+
+    "preface": {
+      "text": "MANY UIROUS\nCOME FROM FAR AWAY...",
+      "pos": [ 0, 0 ],
+      "scale": 5,
+      "layout": "center",
+      "view_layout": "center"
+    },
+
+    "logo_mix_in": {
+      "type": "linear",
+      "duration": 1.6,
+      "start": 44,
+      "end": 0
+    },
+    
+    "logo_mix_out": {
+      "type": "linear",
+      "duration": 1.6,
+      "start": -2,
+      "end": 40
+    },
+
+    "logo": {
+      "text": "UIRU",
+      "pos": [ 0, 40 ],
+      "scale": 22,
+      "layout": "bottom",
+      "view_layout": "center"
+    },
+    
+    "logo_sub": {
+      "text": "U I R O U",
+      "pos": [ 0, -20 ],
+      "scale": 7,
+      "layout": "bottom",
+      "view_layout": "center"
+    },
+
+    "product_no": {
+      "text": "NGS-0004",
+      "pos": [ 250, -50 ],
+      "scale": 3,
+      "layout": "right_bottom",
+      "view_layout": "center"
+    },
+    
+    "lite": {
+      "text": "LITE",
+      "pos": [ 250, -20 ],
+      "scale": 5,
+      "layout": "right_bottom",
+      "view_layout": "center"
+    },
+
+    "copyright": {
+      "text": "@2013 NGS/NISHIYAMA NOBUYUKI",
+      "pos": [ 0, 10 ],
+      "scale": 3,
+      "layout": "bottom",
+      "view_layout": "bottom"
+    },
+
+    "start": {
+      "text": "",
+      "pos": [ 0, -120 ],
+      "scale": 8,
+      "layout": "center",
+      "view_layout": "center"
+    },
+
+    "bgm": {
+      "text": "B",
+      "pos": [ -75, 190 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_right"
+    },
+    "bgm_text": {
+      "text": "BGM",
+      "pos": [ -75, 160 ],
+      "scale": 4,
+      "layout": "bottom",
+      "view_layout": "bottom_right"
+    },
+
+    "se": {
+      "text": "S",
+      "pos": [ -75, 70 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_right"
+    },
+    "se_text": {
+      "text": "SE",
+      "pos": [ -75, 40 ],
+      "scale": 4,
+      "layout": "bottom",
+      "view_layout": "bottom_right"
+    },
+
+    "records": {
+      "text": "R",
+      "pos": [ 75, 190 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+    "records_text": {
+      "text": "RECORDS",
+      "pos": [ 75, 160 ],
+      "scale": 4,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+
+    "credits": {
+      "text": "C",
+      "pos": [ 75, 70 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+    "credits_text": {
+      "text": "CREDITS",
+      "pos": [ 75, 40 ],
+      "scale": 4,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+
+    "gamecenter": {
+      "text": "G",
+      "pos": [ 75, 310 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+    "gamecenter_text": {
+      "text": "GAMECENTER",
+      "pos": [ 75, 285 ],
+      "scale": 3,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+
+    "top": {
+      "text": "BEST:",
+      "pos": [ -20, -20 ],
+      "scale": 5,
+      "layout": "top_right",
+      "view_layout": "top_right"
+    },
+    
+    "start_text": [
+      "]PLAY[",
+      ")PLAY(",
+      "]PLAY[",
+      "}PLAY{"
+    ],
+
+    "icon_off": [ 0.2, 0.2, 0.2, 1.0 ],
+    
+    "start_color": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 0.8,
+          "start": [ 0.0, 0.0, 0.0, 1.0 ],
+          "end": [ 1.0, 1.0, 1.0, 1.0 ]
+        },
+        {
+          "type": "sine_inout",
+          "duration": 0.8,
+          "end": [ 0.0, 0.0, 0.0, 1.0 ]
+        }
+      ]
+    },
+
+    "start_tap_speed": 6,
+
+    "demo_start_time": 8
+  },
+
+  
+  "records": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 1.5,
+      "start": 35,
+      "end": 0
+    },
+    
+    "mix_out": {
+      "type": "linear",
+      "duration": 1.0,
+      "start": 0,
+      "end": 38
+    },
+    
+    "title": {
+      "text": "RECORDS",
+      "pos": [ 0, -20 ],
+      "scale": 10,
+      "layout": "top",
+      "view_layout": "top"
+    },
+
+    "text": [
+      {
+        "text": "NUMBER OF PLAYED %1",
+        "pos": [ 0, 190 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "TOTAL PLAY TIME %2",
+        "pos": [ 0, 140 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "TOTAL DESTROYED %3",
+        "pos": [ 0, 80 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "MOST ONCE DESTROYED %4",
+        "pos": [ 0, 30 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "MOST HIT COMBO %5",
+        "pos": [ 0, -20 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      }
+    ],
+
+    "gamecenter": {
+      "text": "G",
+      "pos": [ 75, 70 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+    "gamecenter_text": {
+      "text": "GAMECENTER",
+      "pos": [ 75, 45 ],
+      "scale": 3,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+
+    "touch_exec_delay": 0.5,
+
+    "spin_rotate": [ 10, 0, 0, 0.5 ],
+    "spin_speed": 60,
+    "cube_pos": [ 0, -90, 0.1 ],
+    "cube_layout": "center",
+    "cube_size": 0.6,
+    "cube_gap": [ 100, 90 ],
+    "rank_text_ofs": -45,
+    
+    "delay": 1.2,
+    "delay_interval": 0.1,
+    "erase_interval": 0.025,
+
+    "rank_text": {
+      "text": "",
+      "pos": [ 0, 0 ],
+      "scale": 3,
+      "layout": "center",
+      "view_layout": "center"
+    }
+  },
+
+
+  "credits": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 2.0,
+      "start": 50,
+      "end": 0
+    },
+    
+    "mix_out": {
+      "type": "linear",
+      "duration": 1.0,
+      "start": 0,
+      "end": 52
+    },
+    
+    "title": {
+      "text": "CREDITS",
+      "pos": [ 0, -20 ],
+      "scale": 8,
+      "layout": "top",
+      "view_layout": "top"
+    },
+
+    "text": [
+      {
+        "text": "UIROU",
+        "pos": [ 0, 200 ],
+        "scale": 5,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "DEVELOPED BY NISHIYAMA NOBUYUKI",
+        "pos": [ 0, 155 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "THANKS TO:",
+        "pos": [ 0, 120 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "SOFTWARE SOCIETY AKIHABARA",
+        "pos": [ 0, 92 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "JAPAN ELECTRONIC COLLAGE",
+        "pos": [ 0, 68 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "MATTSUN",
+        "pos": [ 0, 44 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "ZLIB:@1995 JEAN-LOUP GAILLY",
+        "pos": [ 0, 9 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "AND MARK ADLER",
+        "pos": [ 0, -25 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "LIBPNG:@1998 GLENN RANDERS-PEHRSON",
+        "pos": [ 0, -45 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "PICOJSON:@2009 CYBOZU LABS, INC.",
+        "pos": [ 0, -69 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "@2011 KAZUHO OKU",
+        "pos": [ 0, -93 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "ASSIMP:@2006 ASSIMP TEAM",
+        "pos": [ 0, -123 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "LIBOGG,LIBVORBIS,LIBVORBISFILE:",
+        "pos": [ 0, -153 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      },
+      {
+        "text": "@2002, XIPH.ORG FOUNDATION",
+        "pos": [ 0, -177 ],
+        "scale": 3,
+        "layout": "top",
+        "view_layout": "center"
+      }
+    ],
+
+    "touch_exec_delay": 0.5
+  },
+
+  
+  "game_start": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 1.5,
+      "start": 35,
+      "end": 0
+    },
+    "mix_out": {
+      "type": "linear",
+      "duration": 1.4,
+      "start": 0,
+      "end": 43
+    },
+
+    "disp_time": {
+      "type": "linear",
+      "duration": 5,
+      "start": 3.5,
+      "end": 1.2
+    },
+    
+    "title": {
+      "text": "WARNING!",
+      "pos": [ 5, 20 ],
+      "scale": 13,
+      "layout": "center",
+      "view_layout": "center"
+    },
+    
+    "sub_title": {
+      "text": "UIROUS ARE APPROACHING",
+      "pos": [ 0, -40 ],
+      "scale": 5,
+      "layout": "top",
+      "view_layout": "center"
+    },
+
+    "start_camera": {
+    "type": "quad_inout",
+    "duration": 3.0,
+    "end_z": -170.0,
+    "end_rot": [ 54, 1.0, 0.0, -0.8 ]
+    }
+  },
+
+  "game_over": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 1.5,
+      "start": 35,
+      "end": 0
+    },
+    "mix_out": {
+      "type": "linear",
+      "duration": 1.7,
+      "start": 0,
+      "end": 40
+    },
+
+    "disp_time": {
+      "type": "linear",
+      "duration": 5,
+      "start": 5,
+      "end": 2.5
+    },
+    "duration": 2.1,
+    
+    "title": {
+      "text": "GAME OVER",
+      "pos": [ 0, 20 ],
+      "scale": 13,
+      "layout": "center",
+      "view_layout": "center"
+    },
+    
+    "sub_title": {
+      "text": "THE UIROU WAS CONQUERED",
+      "pos": [ 0, -40 ],
+      "scale": 5,
+      "layout": "top",
+      "view_layout": "center"
+    }
+  },
+  
+  "game_logic": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 0.8,
+      "start": 15,
+      "end": 0
+    },
+    
+    "mix_out": {
+      "type": "linear",
+      "duration": 0.8,
+      "start": 0,
+      "end": 18
+    },
+
+    "out_delay": 0.2,
+
+    "info_disp_duration": 2,
+    
+    "destroy_in": {
+      "type": "linear",
+      "duration": 0.5,
+      "start": 15,
+      "end": 0
+    },
+    "destroy_out": {
+      "type": "linear",
+      "duration": 0.5,
+      "start": 0,
+      "end": 15
+    },
+
+    "combo_in": {
+      "type": "linear",
+      "duration": 0.5,
+      "start": 15,
+      "end": 0
+    },
+    "combo_out": {
+      "type": "linear",
+      "duration": 0.5,
+      "start": 0,
+      "end": 15
+    },
+
+    "item_count": 10,
+    
+    "pause_icon": {
+      "text": "P",
+      "pos": [ 20, -20 ],
+      "scale": 5,
+      "layout": "top_left",
+      "view_layout": "top_left"
+    },
+
+    "score_text": {
+      "text": "SCORE:",
+      "pos": [ -20, -20 ],
+      "scale": 5,
+      "layout": "top_right",
+      "view_layout": "top_right"
+    },
+
+    "best_text": {
+      "text": "BEST:",
+      "pos": [ -20, -60 ],
+      "scale": 3,
+      "layout": "top_right",
+      "view_layout": "top_right"
+    },
+
+    "signt_text": {
+      "text": "0",
+      "pos": [ 20, 20 ],
+      "scale": 25,
+      "layout": "bottom_left",
+      "view_layout": "bottom_left"
+    },
+
+    "base_hp_text": {
+      "text": "0",
+      "pos": [ -20, 20 ],
+      "scale": 25,
+      "layout": "bottom_right",
+      "view_layout": "bottom_right",
+
+      "mix_in": {
+        "type": "linear",
+        "duration": 0.6,
+        "start": 15,
+        "end": -2
+      },
+      
+      "mix_out": {
+        "type": "linear",
+        "duration": 0.6,
+        "start": -2,
+        "end": 15
+      },
+      
+      "damaged_ease": {
+        "loop": false,
+        "values": [
+          {
+            "type": "linear",
+            "duration": 0.05,
+            "start": [ 1.0, 1.0, 1.0, 1.0 ],
+            "end": [ 1.0, 0.0, 0.0, 1.0 ]
+          },
+          {
+            "type": "linear",
+            "duration": 0.2,
+            "end": [ 1.0, 1.0, 1.0, 1.0 ]
+          }
+        ]
+      },
+
+      "wounded_ease": {
+        "loop": true,
+        "values": [
+          {
+            "type": "linear",
+            "duration": 0.5,
+            "start": [ 1.0, 1.0, 1.0, 1.0 ],
+            "end": [ 1.0, 0.0, 0.0, 1.0 ]
+          },
+          {
+            "type": "linear",
+            "duration": 0.5,
+            "end": [ 1.0, 1.0, 1.0, 1.0 ]
+          }
+        ]
+      }
+    },
+    "base_hp_ofs": 95,
+
+    "combo_text": {
+      "text": " HIT COMBO!",
+      "pos": [ -20, -100 ],
+      "scale": 5,
+      "layout": "top_right",
+      "view_layout": "right_top"
+    },
+
+    "destroy_text": {
+      "text": " DESTROYS!",
+      "pos": [ -20, -140 ],
+      "scale": 5,
+      "layout": "top_right",
+      "view_layout": "right_top"
+    },
+
+    "damaged_ease": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 1.0, 1.0, 1.0, 1.0 ],
+          "end": [ 1.0, 0.0, 0.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 1.0, 1.0, 1.0, 1.0 ]
+        }
+      ]
+    },
+
+    "wounded_ease": {
+      "loop": true,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.5,
+          "start": [ 1.0, 1.0, 1.0, 1.0 ],
+          "end": [ 1.0, 0.0, 0.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.5,
+          "end": [ 1.0, 1.0, 1.0, 1.0 ]
+        }
+      ]
+    },
+
+    "item_text": {
+      "text": "",
+      "pos": [ 0, 150 ],
+      "scale": 5,
+      "layout": "bottom",
+      "view_layout": "bottom"
+    },
+    "item_effect": {
+      "max_power": "HEAVY WEIGHT!",
+      "enemy_stiff": "STOP UIROUS!",
+      "base_immortal": "IMMORTAL WHITE UIROU!",
+      "score_multiply": "SCORE X4!",
+      "max_range": "MAXIMUM ATTACK RANGE!"
+    },
+    "item_in": {
+      "type": "linear",
+      "duration": 0.8,
+      "start": 15,
+      "end": 0
+    },
+    "item_out": {
+      "type": "linear",
+      "duration": 0.6,
+      "start": 0,
+      "end": 15
+    },
+    
+    "item_color": {
+      "loop": true,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "start": [ 1.0, 1.0, 1.0, 1.0 ],
+          "end": [ 1.0, 1.0, 0.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 1.0, 0.0, 0.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 1.0, 0.0, 1.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0.0, 1.0, 0.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0.0, 1.0, 1.0, 1.0 ]
+        }
+      ]
+    },
+    
+    "level_text": {
+      "text": "FACE ",
+      "pos": [ 0, -10 ],
+      "scale": 7,
+      "layout": "center",
+      "view_layout": "center"
+    },
+    "level_in": {
+      "type": "linear",
+      "duration": 1.7,
+      "start": 30,
+      "end": -15
+    },
+    "level_out": {
+      "type": "linear",
+      "duration": 0.6,
+      "start": -15,
+      "end": 10
+    },
+    "level_disp_delay": 0.8,
+    "level_disp_duration": 1,
+
+    "light_effect": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 1.0,
+          "start": [ 0.0, 0.0, 0.0 ],
+          "end": [ 0.25, 0.0, 0.0 ]
+        },
+        {
+          "type": "sine_inout",
+          "duration": 1.0,
+          "end": [ 0.0, 0.0, 0.0 ]
+        }
+      ]
+    },
+    
+    "bgm_start_delay": 1,
+    "demo_bgm": false
+  },
+
+  "pause_menu": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 1,
+      "start": 23,
+      "end": 0
+    },
+    
+    "mix_out": {
+      "type": "linear",
+      "duration": 0.9,
+      "start": 0,
+      "end": 30
+    },
+
+    "volume_in": {
+      "type": "linear",
+      "duration": 0.25,
+      "start": 0.8,
+      "end": 0.3
+    },
+    
+    "volume_out": {
+      "type": "linear",
+      "duration": 0.25,
+      "start": 0.3,
+      "end": 0.8
+    },
+    
+    "title": {
+      "text": "GAME PAUSED",
+      "pos": [ 0, 60 ],
+      "scale": 10,
+      "layout": "center",
+      "view_layout": "center"
+    },
+    
+    "resume": {
+      "text": "",
+      "pos": [ 0, -40 ],
+      "scale": 6,
+      "layout": "center",
+      "view_layout": "center"
+    },
+    
+    "abort": {
+      "text": "",
+      "pos": [ 0, -140 ],
+      "scale": 6,
+      "layout": "center",
+      "view_layout": "center"
+    },
+
+    "resume_text": [
+      "]RESUME[",
+      ")RESUME(",
+      "]RESUME[",
+      "}RESUME{"
+    ],
+    
+    "abort_text": [
+      "]BACK TO TITLE[",
+      ")BACK TO TITLE(",
+      "]BACK TO TITLE[",
+      "}BACK TO TITLE{"
+    ],
+
+    "blink_speed": 6
+  },
+
+  "game_result": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 2.4,
+      "start": 60,
+      "end": 0
+    },
+    
+    "mix_out": {
+      "type": "linear",
+      "duration": 2,
+      "start": 0,
+      "end": 55
+    },
+    
+    "title": {
+      "text": "RESULTS",
+      "pos": [ 0, -30 ],
+      "scale": 9,
+      "layout": "top",
+      "view_layout": "top"
+    },
+
+    "text": [
+      {
+        "text": "PLAY TIME %1",
+        "pos": [ 0, 170 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "DESTROYED UIROUS %2",
+        "pos": [ 0, 130 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "MOST ONCE DESTROYED %3",
+        "pos": [ 0, 90 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "MOST HIT COMBO %6",
+        "pos": [ 0, 50 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "BEST %4",
+        "pos": [ 0, -60 ],
+        "scale": 4,
+        "layout": "center",
+        "view_layout": "center"
+      },
+      {
+        "text": "YOUR RANK %5",
+        "pos": [ 0, -110 ],
+        "scale": 5,
+        "layout": "center",
+        "view_layout": "center"
+      }
+    ],
+    
+    "sub_score": {
+      "text": "YOUR SCORE ",
+      "pos": [ 0, -25 ],
+      "scale": 5,
+      "layout": "center",
+      "view_layout": "center"
+    },
+
+    "sub_new_best": {
+      "text": "HIGH SCORE!",
+      "pos": [ 0, 5 ],
+      "scale": 4,
+      "layout": "center",
+      "view_layout": "center"
+    },
+
+    
+    "facebook": {
+      "text": "F",
+      "pos": [ -75, 190 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_right"
+    },
+    
+    "twitter": {
+      "text": "T",
+      "pos": [ -75, 70 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_right"
+    },
+    
+    "gamecenter": {
+      "text": "G",
+      "pos": [ 75, 70 ],
+      "scale": 8,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+    "gamecenter_text": {
+      "text": "GAMECENTER",
+      "pos": [ 75, 45 ],
+      "scale": 3,
+      "layout": "bottom",
+      "view_layout": "bottom_left"
+    },
+    
+    "touch_exec_delay": 0.5,
+
+    "best_color": {
+      "loop": true,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "start": [ 0.0, 1.0, 0.0, 1.0 ],
+          "end": [ 1.0, 0.0, 0.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0.0, 0.0, 1.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 1.0, 0.0, 1.0, 1.0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 1.0, 1.0, 0.0, 1.0 ]
+        }
+      ]
+    },
+
+    "new_best_delay": 1.8,
+    "best_ease": {
+      "type": "quad_in",
+      "duration": 0.25,
+      "start": 7.0,
+      "end": 4.0
+    },
+
+    "spin_rotate": [ 10, 0, 0, 0.5 ],
+    "spin_speed": 60,
+    "cube_pos": [ 0, -180, 0.1 ],
+    "cube_layout": "center",
+    "cube_size": 0.6,
+
+    "scale_delay": 2.4
+  },
+
+  
+  "skip_tap": {
+    "exec_delay": 0.1,
+    "move_dist_limit": 10
+  },
+  
+  "await_tap": {
+    "mix_in": {
+      "type": "linear",
+      "duration": 0.5,
+      "start": 0,
+      "end": -12
+    },
+    
+    "mix_out": {
+      "type": "linear",
+      "duration": 0.8,
+      "start": -20,
+      "end": 3
+    },
+    
+    "text": {
+      "text": "",
+      "pos": [ 0, 10 ],
+      "scale": 5,
+      "layout": "bottom",
+      "view_layout": "bottom"
+    },
+    
+    "text_color": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 0.8,
+          "start": [ 0.0, 0.0, 0.0, 1.0 ],
+          "end": [ 1.0, 1.0, 1.0, 1.0 ]
+        },
+        {
+          "type": "sine_inout",
+          "duration": 0.8,
+          "end": [ 0.0, 0.0, 0.0, 1.0 ]
+        }
+      ]
+    },
+
+    "await_text": [
+      "]GO TO TITLE[",
+      ")GO TO TITLE(",
+      "]GO TO TITLE[",
+      "}GO TO TITLE{"
+    ],
+    "blink_speed": 6
+  },
+
+  
+  "manipulate": {
+    "z_near": -100,
+    "z_near_limit": -90,
+    "z_far": -400,
+    "z_far_limit": -500,
+
+    "bound": 0.5,
+
+    "rotate_start_type": "quart_inout",
+    "rotate_cont_type": "quart_out",
+    "rotate_start_time": 0.2,
+    "rotate_cont_time": 0.3,
+    "rotate_end_rate": 1.5,
+    "rotate_end_time": 0.2,
+    "rotate_rate": 1.2,
+
+    "pinch_start_type": "cubic_inout",
+    "pinch_cont_type": "cubic_out",
+    "pinch_start_time": 0.05,
+    "pinch_cont_time": 0.1,
+    "pinch_rate": [ -1.9, -2.2 ],
+    
+    "eye": [ 0, 0, -85 ],
+
+    "view_effect_begin": {
+      "type": "cubic_out",
+      "duration": 0.2,
+      "start": 0,
+      "end": -2.5
+    },
+    "view_effect_end": {
+      "type": "cubic_out",
+      "duration": 0.4,
+      "start": -2.5,
+      "end": 0
+    },
+    
+    "move_dist": 45
+  },
+
+
+  "bg": {
+    "shader": "bg",
+
+    "light_effect": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 1.0,
+          "start": [ 0.0, 0.0, 0.0 ],
+          "end": [ 0.25, 0.0, 0.0 ]
+        },
+        {
+          "type": "sine_inout",
+          "duration": 1.0,
+          "end": [ 0.0, 0.0, 0.0 ]
+        }
+      ]
+    },
+    
+    "vtx": [
+      [  0.1, -0.2 ],
+
+      [ -1.0, -1.0 ],
+
+      [ -0.5, -1.0 ],
+      [  0.0, -1.0 ],
+      [  0.5, -1.0 ],
+
+      [  1.0, -1.0 ],
+
+      [  1.0, -0.5 ],
+      [  1.0,  0.1 ],
+      [  1.0,  0.5 ],
+
+      [  1.0,  1.0 ],
+
+      [  0.5,  1.0 ],
+      [  0.0,  1.0 ],
+      [ -0.5,  1.0 ],
+
+      [ -1.0,  1.0 ],
+
+      [ -1.0,  0.5 ],
+      [ -1.0,  0.0 ],
+      [ -1.0, -0.5 ],
+
+      [ -1.0, -1.0 ]
+    ],
+    "color": [
+      [ 0.85, 0.85, 0.85, 1.0 ],
+
+      [ 0.51, 0.51, 0.51, 1.0 ],
+      
+      [ 0.61, 0.61, 0.61, 1.0 ],
+      [ 0.68, 0.68, 0.68, 1.0 ],
+      [ 0.62, 0.62, 0.62, 1.0 ],
+      
+      [ 0.51, 0.51, 0.51, 1.0 ],
+
+      [ 0.63, 0.63, 0.63, 1.0 ],
+      [ 0.71, 0.71, 0.71, 1.0 ],
+      [ 0.63, 0.63, 0.63, 1.0 ],
+
+      [ 0.51, 0.51, 0.51, 1.0 ],
+
+      [ 0.63, 0.63, 0.63, 1.0 ],
+      [ 0.70, 0.70, 0.70, 1.0 ],
+      [ 0.62, 0.62, 0.62, 1.0 ],
+
+      [ 0.52, 0.52, 0.52, 1.0 ],
+
+      [ 0.61, 0.61, 0.61, 1.0 ],
+      [ 0.69, 0.69, 0.69, 1.0 ],
+      [ 0.60, 0.60, 0.60, 1.0 ],
+
+      [ 0.51, 0.51, 0.51, 1.0 ]
+    ]
+  },
+
+  "space": {
+    "model": "space.dae",
+    "shader": "texture_light",
+    "material_deffuse": [ 0.6, 0.6, 0.6 ],
+
+    "pos": [ 0, 0, -250 ],
+    "scale": 600,
+
+    "rotate_speed": [ 0.5, 4 ]
+  },
+  
+  "planet": {
+    "model": "planet.dae",
+    "shader": "color_light_3"
+  },
+
+  
+  "cubeBase": {
+    "radius": 8,
+    "HP": 5,
+
+    "model": "cube_base.dae",
+    "shader": "uirou_white",
+    "material_deffuse": [ 0.95, 0.95, 0.95 ],
+
+    "face_normal": [
+      "base_face1.png",
+      "base_face2.png",
+      "base_face3.png",
+      "base_face4.png",
+      "base_face5.png",
+      "base_face6.png",
+      "base_face7.png",
+      "base_face8.png"
+    ],
+
+    "face_damage": "base_damage.png",
+    "face_damage_time": 2,
+
+    "face_wounded": "base_wounded.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quart_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.25,
+      "speed": 1000,
+      "w_st": 0,
+      "k": 1.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1000,
+      "w_st": 80,
+      "k": 1.5
+    },
+    "quake_playerhit": {
+      "duration": 3,
+      "power": 0.2,
+      "speed": 1000,
+      "w_st": 80,
+      "k": 1.5
+    },
+    "quake_contact": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 1.5
+    },
+
+    "hit_effect": {
+      "type": "linear",
+      "duration": 1,
+      "start": [ 1, 0, 0 ],
+      "end": [ 0, 0, 0 ]
+    },
+
+    "immortal_ease": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 0.5,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.325, 0.184, 0.0 ]
+        },
+        {
+          "type": "sine_inout",
+          "duration": 0.5,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+    
+    "shadow_radius": 6.5,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+  
+  "cubePlayer": {
+    "radius": 2.5,
+    "speed": 10,
+
+    "signt_ready_num": 5,
+    "signt_ready_time": 1.0,
+
+    "attack_speed": 90,
+    "attack_height": 80,
+    "attack_distance": 180,
+    "attack_range": [ 7, 40 ],
+    "attack_type": "quad_in",
+    "attack_stiff": 0.3,
+
+    "model": "cube_player.dae",
+    "shader": "uirou_white",
+    "material_deffuse": [ 0.95, 0.95, 0.95 ],
+
+    "face_normal": "player_face1.png",
+
+    "face_attack": "player_attack.png",
+    "face_attack_time": 0.8,
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quart_in",
+      "duration": 4,
+      "start": 80,
+      "end": 0
+    },
+    "entry_stiff": 0.5,
+
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_attack": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+    
+    "shadow_radius": 2.8,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+
+  "signt": {
+    "scale": 9,
+    "rotate_speed": 180,
+    
+    "model": "signt.dae",
+    "shader": "color",
+
+    "easing": {
+      "type": "elastic_out",
+      "duration": 0.45,
+      "start": 0,
+      "end": 1
+    }
+  },
+
+  "attack_effect": {
+    "div_gap": 6,
+    "div_max": 50,
+    "div_min": 18,
+    "width": 2.5,
+    "shader": "color",
+    
+    "radius_ease": {
+      "type": "expo_in",
+      "duration": 0.6,
+      "start": 0,
+      "end": -4
+    },
+
+    "color_ease": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 1.0, 1.0, 1.0, 0.0 ],
+          "end": [ 1.0, 1.0, 1.0, 0.9 ]
+        },
+        {
+          "type": "quad_in",
+          "duration": 0.55,
+          "end": [ 1.0, 1.0, 1.0, 0.0 ]
+        }
+      ]
+    }
+  },
+
+  "cubeItem": {
+    "radius": 1.5,
+
+    "y_ofs": 5,
+
+    "spin_speed": [ 120, 80 ],
+
+    "entry": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "disappear": {
+      "type": "quart_out",
+      "duration": 1.5,
+      "start": 1,
+      "end": 0
+    },
+
+    "absorb_type": "quart_out",
+    "absorb_start": 0.08,
+    "absorb_end": 0,
+    "absorb_duration": 0.3,
+
+    "obtain": {
+      "type": "expo_out",
+      "duration": 1.0,
+      "start": 0,
+      "end": 10
+    },
+
+    "exist_time": 8,
+
+    "effect_time": 10,
+    
+    "model": "item.dae",
+    "shader": "color_light_3",
+
+    "color": [
+      [ 1.0, 0.753, 0.988 ],
+      [ 0.984, 0.98, 0.486 ],
+      [ 0.325, 0.184, 0.0 ],
+      [ 0.682, 0.4, 0.404 ],
+      [ 0.341, 0.816, 0.0 ]
+    ],
+
+    "effect_ease": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 0.2,
+          "start": 1,
+          "end": 0
+        },
+        {
+          "type": "sine_inout",
+          "duration": 0.2,
+          "end": 1
+        }
+      ]
+    },
+
+    "color_disp": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 0.8,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "type": "sine_inout",
+          "duration": 0.8,
+          "end": 0
+        }
+      ]
+    },
+    
+    "color_obtain": {
+      "loop": false,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 1.0,
+          "start": 0.2,
+          "end": 1
+        }
+      ]
+    },
+    
+    "shadow_radius": 2,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.1 ],
+
+    "shadow_fade_in": {
+      "type": "linear",
+      "duration": 0.25,
+      "start": 0,
+      "end": 1
+    },
+    "shadow_fade_out": {
+      "type": "linear",
+      "duration": 0.5,
+      "start": 1,
+      "end": 0
+    }
+  },
+  
+  "uirous" : {
+    "model": "uirou.dae",
+
+    "shader": "uirou_rank",
+    
+    "rank": [
+      "MISO",
+      "SAKURA",
+      "YUZU",
+      "COFFEE",
+      "AZUKI",
+      "MACCHA",
+      "KURO",
+      "SIRO"
+    ],
+
+    "model_colors": {
+      "MISO": [ 0.702, 0.384, 0.271 ],
+      "SAKURA": [ 1.0, 0.753, 0.988 ],
+      "YUZU": [ 0.984, 0.98, 0.486 ],
+      "COFFEE": [ 0.325, 0.184, 0.0 ],
+      "AZUKI": [ 0.682, 0.4, 0.404 ],
+      "MACCHA": [ 0.341, 0.816, 0.0 ],
+      "KURO": [ 0.0, 0.0, 0.0 ],
+      "SIRO": [ 1.0, 1.0, 1.0 ]
+    },
+    
+    "model_textures": {
+      "MISO": "rank_miso.png",
+      "SAKURA": "rank_sakura.png",
+      "YUZU": "rank_yuzu.png",
+      "COFFEE": "rank_coffee.png",
+      "AZUKI": "rank_azuki.png",
+      "MACCHA": "rank_maccha.png",
+      "KURO": "rank_kuro.png",
+      "SIRO": "rank_siro.png"
+    },
+
+    "scale_disp" : {
+      "type": "elastic_out",
+      "duration": 0.9,
+      "start": 0,
+      "end": 1
+    },
+    
+    "scale_erase" : {
+      "type": "back_in",
+      "duration": 0.3,
+      "start": 1,
+      "end": 0
+    },
+    
+    "color_disp": {
+      "loop": true,
+      "values": [
+        {
+          "type": "sine_inout",
+          "duration": 1.2,
+          "start": 1,
+          "end": 0.6
+        },
+        {
+          "type": "sine_inout",
+          "duration": 1.2,
+          "end": 1
+        }
+      ]
+    }
+  },
+
+  
+  "miso": {
+    "radius":[ 2.4, 2.6 ],
+    "speed": [ 6, 8 ],
+    "yaw_max": [ 25, 30 ],
+    "HP": 1,
+    "start_cpu": "straight",
+    "start_cpu_param": {
+      "distance": [ 0, 100 ],
+      "acc": [ 1, 1 ]
+    },
+    
+    "model": "cube_enemy.dae",
+    "shader": "uirou_black",
+    "material_deffuse": [ 0.1, 0.1, 0.1 ],
+    "texture": "enemy_miso.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+    
+    "entry": {
+      "type": "quad_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50.0
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "landing_stiff": 0.25,
+
+    "jump_type": "quad_in",
+    "jump_speed": [ 60, 70 ],
+    "jump_height": 50,
+    "jump_stiff": 0.5,
+
+    "damaged_color": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.8, 0, 0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+
+    "wounded_color": [ 0.8, 0.0, 0.0 ],
+    
+    "destroy_type": "expo_out",
+    "destroy_duration": 0.5,
+
+    "disappear": {
+      "type": "back_in",
+      "duration": 0.4,
+      "start": 1,
+      "end": 0.1
+    },
+    
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+
+    "shadow_radius": 2.9,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+
+  "sakura": {
+    "radius": [ 1.8, 2 ],
+    "speed": [ 10, 12 ],
+    "yaw_max": [ 32, 36 ],
+    "HP": 1,
+    "start_cpu": "straight",
+    "start_cpu_param": {
+      "distance": [ 0, 1 ],
+      "acc": [ 1, 1 ]
+    },
+    
+    "model": "cube_enemy.dae",
+    "shader": "uirou_black",
+    "material_deffuse": [ 0.1, 0.1, 0.1 ],
+    "texture": "enemy_sakura.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quad_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50.0
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "landing_stiff": 0.25,
+
+    "jump_type": "quad_in",
+    "jump_speed": [ 60, 70 ],
+    "jump_height": 50,
+    "jump_stiff": 0.5,
+
+    "damaged_color": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.8, 0, 0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+
+    "wounded_color": [ 0.8, 0.0, 0.0],
+
+    "destroy_type": "expo_out",
+    "destroy_duration": 0.5,
+
+    "disappear": {
+      "type": "back_in",
+      "duration": 0.4,
+      "start": 1,
+      "end": 0.1
+    },
+
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+
+    "shadow_radius": 2.2,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+
+  "yuzu": {
+    "radius": [ 3, 3.2 ],
+    "speed": [ 4, 6 ],
+    "yaw_max": [ 25, 30 ],
+    "HP": 2,
+    "start_cpu": "straight",
+    "start_cpu_param": {
+      "distance": [ 30, 70 ],
+      "acc": [ 1.5, 1 ]
+    },
+    
+    "model": "cube_enemy.dae",
+    "shader": "uirou_black",
+    "material_deffuse": [ 0.1, 0.1, 0.1 ],
+    "texture": "enemy_yuzu.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quad_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50.0
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "landing_stiff": 0.25,
+
+    "jump_type": "quad_in",
+    "jump_speed": [ 50, 60 ],
+    "jump_height": 50,
+    "jump_stiff": 0.5,
+
+    "damaged_color": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.8, 0, 0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+
+    "wounded_color": [ 0.8, 0.0, 0.0],
+
+    "destroy_type": "expo_out",
+    "destroy_duration": 0.5,
+
+    "disappear": {
+      "type": "back_in",
+      "duration": 0.4,
+      "start": 1,
+      "end": 0.1
+    },
+
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+
+    "shadow_radius": 3.5,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+
+  "coffee": {
+    "radius": [ 1.4, 1.6 ],
+    "speed": [ 10, 14 ],
+    "yaw_max": [ 35, 40 ],
+    "HP": 1,
+    "start_cpu": "jump",
+    "start_cpu_param": {
+      "interval": [ 2, 3 ],
+      "distance": [ 25, 30 ],
+      "near_distsnce": 40
+    },
+    
+    "model": "cube_enemy.dae",
+    "shader": "uirou_black",
+    "material_deffuse": [ 0.1, 0.1, 0.1 ],
+    "texture": "enemy_coffee.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quad_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50.0
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "landing_stiff": 0.3,
+
+    "jump_type": "quad_in",
+    "jump_speed": [ 40, 60 ],
+    "jump_height": 100,
+    "jump_stiff": 0.5,
+
+    "damaged_color": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.8, 0, 0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+
+    "wounded_color": [ 0.8, 0.0, 0.0],
+
+    "destroy_type": "expo_out",
+    "destroy_duration": 0.5,
+
+    "disappear": {
+      "type": "back_in",
+      "duration": 0.4,
+      "start": 1,
+      "end": 0.1
+    },
+
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+
+    "shadow_radius": 2,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+
+  "azuki": {
+    "radius": [ 3.4, 3.6 ],
+    "speed": [ 4, 5 ],
+    "yaw_max": [ 10, 15 ],
+    "HP": 3,
+    "start_cpu": "half",
+    "start_cpu_param": {
+      "acc": [ 1, 2.5 ]
+    },
+    
+    "model": "cube_enemy.dae",
+    "shader": "uirou_black",
+    "material_deffuse": [ 0.1, 0.1, 0.1 ],
+    "texture": "enemy_azuki.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quad_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50.0
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "landing_stiff": 0.25,
+
+    "jump_type": "quad_in",
+    "jump_speed": [ 40, 50 ],
+    "jump_height": 50,
+    "jump_stiff": 0.5,
+
+    "damaged_color": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.8, 0, 0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+
+    "wounded_color": [ 0.8, 0.0, 0.0],
+
+    "destroy_type": "expo_out",
+    "destroy_duration": 0.5,
+
+    "disappear": {
+      "type": "back_in",
+      "duration": 0.4,
+      "start": 1,
+      "end": 0.1
+    },
+
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+
+    "shadow_radius": 3.8,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+
+  "maccha": {
+    "radius": [ 2.6, 2.8 ],
+    "speed": [ 20, 25 ],
+    "yaw_max": [ 100, 120 ],
+    "HP": 1,
+    "start_cpu": "zigzag",
+    "start_cpu_param": {
+      "straight_interval": [ 1, 3 ],
+      "straight_acc": [ 1.0, 0.8 ],
+      "rotate_interval": [ 0.25, 0.5 ],
+      "rotate_acc": [ 0, 0 ]
+    },
+    
+    "model": "cube_enemy.dae",
+    "shader": "uirou_black",
+    "material_deffuse": [ 0.1, 0.1, 0.1 ],
+    "texture": "enemy_maccha.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quad_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50.0
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "landing_stiff": 0.25,
+
+    "jump_type": "quad_in",
+    "jump_speed": [ 40, 50 ],
+    "jump_height": 50,
+    "jump_stiff": 0.5,
+
+    "damaged_color": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.8, 0, 0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+
+    "wounded_color": [ 0.8, 0.0, 0.0],
+
+    "destroy_type": "expo_out",
+    "destroy_duration": 0.5,
+
+    "disappear": {
+      "type": "back_in",
+      "duration": 0.4,
+      "start": 1,
+      "end": 0.1
+    },
+
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+
+    "shadow_radius": 3.5,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+
+  "kuro": {
+    "radius": [ 2.3, 2.5 ],
+    "speed": [ 10, 12 ],
+    "yaw_max": [ 40, 45 ],
+    "HP": 2,
+    "start_cpu": "fullspec",
+    "start_cpu_param": {
+      "distance": [ 60, 100 ],
+      "acc": [ 1.5, 1 ],
+      "interval": [ 2, 5 ],
+      "jump_distance": [ 50, 60 ],
+      "near_distsnce": 50,
+      "target_interval": [ 3, 5 ]
+    },
+    
+    "model": "cube_enemy.dae",
+    "shader": "uirou_black",
+    "material_deffuse": [ 0.1, 0.1, 0.1 ],
+    "texture": "enemy_kuro.png",
+
+    "appear": {
+      "type": "elastic_out",
+      "duration": 0.8,
+      "start": 0,
+      "end": 1
+    },
+
+    "entry": {
+      "type": "quad_in",
+      "duration": 3,
+      "start": 80,
+      "end": 0
+    },
+
+    "leave": {
+      "type": "quad_in",
+      "duration": 2,
+      "start": 0,
+      "end": 50.0
+    },
+    "leave_scale": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 1.7,
+          "start": 1,
+          "end": 1
+        },
+        {
+          "type": "back_in",
+          "duration": 0.3,
+          "start": 1,
+          "end": 0
+        }
+      ]
+    },
+    
+    "landing_stiff": 0.25,
+
+    "jump_type": "quad_in",
+    "jump_speed": [ 40, 60 ],
+    "jump_height": 60,
+    "jump_stiff": 0.4,
+
+    "damaged_color": {
+      "loop": false,
+      "values": [
+        {
+          "type": "linear",
+          "duration": 0.05,
+          "start": [ 0, 0, 0 ],
+          "end": [ 0.8, 0, 0 ]
+        },
+        {
+          "type": "linear",
+          "duration": 0.2,
+          "end": [ 0, 0, 0 ]
+        }
+      ]
+    },
+
+    "wounded_color": [ 0.8, 0.0, 0.0],
+
+    "destroy_type": "expo_out",
+    "destroy_duration": 0.5,
+
+    "disappear": {
+      "type": "back_in",
+      "duration": 0.4,
+      "start": 1,
+      "end": 0.1
+    },
+
+    "quake_landing": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 0,
+      "k": 2.5
+    },
+    "quake_damage": {
+      "duration": 3,
+      "power": 0.3,
+      "speed": 1200,
+      "w_st": 80,
+      "k": 2.5
+    },
+    "quake_move": {
+      "duration": 2,
+      "power": 0.1,
+      "speed": 1500,
+      "w_st": 0,
+      "k": 2
+    },
+
+    "quake_move_rate": 0.01,
+
+    "shadow_radius": 3,
+    "shadow_color": [ 1.0, 1.0, 1.0, 0.24 ]
+  },
+  
+  
+  "generator": {
+    "level_max": 4,
+    "speed": [ 1, 2 ],
+    "yaw": [ 1, 2 ],
+    "jump_speed": [ 1, 2 ],
+
+    "base_entry": [
+      {
+        "entry_level": -1,
+        "angle": [ 180, 180 ]
+      },
+
+      {
+        "entry_level": 2,
+        "angle": [ 90, 90 ]
+      },
+
+      {
+        "entry_level": 5,
+        "angle": [ 45, 45 ]
+      },
+
+      {
+        "entry_level": 9,
+        "angle": [ 0, 0 ]
+      }
+    ],
+    
+    "patterns": [
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 10,
+        "once_spawn": [ 1, 1 ],
+        "interval": [ 2, 3 ],
+        "angle": [ 10, 80 ],
+
+        "types": [
+          "miso"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 10,
+        "once_spawn": [ 2, 3 ],
+        "interval": [ 1.5, 2.5 ],
+        "angle": [ 10, 120 ],
+
+        "types": [
+          "miso",
+          "sakura",
+          "sakura"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 10,
+        "once_spawn": [ 1, 2 ],
+        "interval": [ 2, 3 ],
+        "angle": [ 5, 110 ],
+
+        "types": [
+          "miso",
+          "yuzu",
+          "yuzu"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 12,
+        "once_spawn": [ 1, 2 ],
+        "interval": [ 1, 2 ],
+        "angle": [ 5, 135 ],
+
+        "types": [
+          "miso",
+          "coffee",
+          "coffee"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 12,
+        "once_spawn": [ 1, 2 ],
+        "interval": [ 1.5, 2.5 ],
+        "angle": [ 5, 135 ],
+
+        "types": [
+          "miso",
+          "azuki",
+          "azuki"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 12,
+        "once_spawn": [ 2, 3 ],
+        "interval": [ 3, 4 ],
+        "angle": [ 45, 135 ],
+
+        "types": [
+          "maccha"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 12,
+        "once_spawn": [ 2, 3 ],
+        "interval": [ 3, 4 ],
+        "angle": [ 45, 135 ],
+
+        "types": [
+          "yuzu",
+          "azuki"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 12,
+        "once_spawn": [ 2, 3 ],
+        "interval": [ 2, 3 ],
+        "angle": [ 5, 135 ],
+
+        "types": [
+          "coffee",
+          "sakura",
+          "maccha"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 15,
+        "once_spawn": [ 3, 4 ],
+        "interval": [ 2, 3 ],
+        "angle": [ 30, 135 ],
+
+        "types": [
+          "miso"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 12,
+        "once_spawn": [ 2, 3 ],
+        "interval": [ 2, 3 ],
+        "angle": [ 20, 150 ],
+
+        "types": [
+          "maccha",
+          "kuro",
+          "kuro"
+        ]
+      },
+      
+      {
+        "wait": true,
+        "delay": 1,
+        "spawn_num": 15,
+        "once_spawn": [ 2, 3 ],
+        "interval": [ 2, 4 ],
+        "angle": [ 20, 150 ],
+
+        "types": [
+          "sakura",
+          "yuzu",
+          "coffee",
+          "azuki",
+          "maccha",
+          "kuro"
+        ]
+      }
+    ]
+  },
+
+  
+  "sound": [
+    {
+      "name": "intro",
+      "type": "bgm",
+      "category": "bgm",
+      "file": "intro.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "title",
+      "type": "bgm",
+      "category": "bgm",
+      "file": "title.ogg",
+      "loop": false,
+      "gain": 1
+    },
+
+    {
+      "name": "game_start",
+      "type": "bgm",
+      "category": "bgm",
+      "file": "game_start.ogg",
+      "loop": false,
+      "gain": 1
+    },
+
+    {
+      "name": "bgm",
+      "type": "bgm",
+      "category": "bgm",
+      "file": "bgm.ogg",
+      "loop": true,
+      "gain": 0.8
+    },
+
+    {
+      "name": "game_over",
+      "type": "bgm",
+      "category": "bgm",
+      "file": "game_over.ogg",
+      "loop": false,
+      "gain": 1
+    },
+
+    {
+      "name": "ranking",
+      "type": "bgm",
+      "category": "bgm",
+      "file": "ranking.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "wipe",
+      "type": "se",
+      "category": "wipe",
+      "file": "wipe.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "start",
+      "type": "se",
+      "category": "start",
+      "file": "start.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "pause",
+      "type": "se",
+      "category": "pause",
+      "file": "pause.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "item_entry",
+      "type": "se",
+      "category": "item_entry",
+      "file": "item_entry.ogg",
+      "loop": false,
+      "gain": 0.8
+    },
+    
+    {
+      "name": "item_get",
+      "type": "se",
+      "category": "item_get",
+      "file": "item_get.ogg",
+      "loop": false,
+      "gain": 0.8
+    },
+    
+    {
+      "name": "enemy_hit",
+      "type": "se",
+      "category": "enemy_hit",
+      "file": "enemy_hit.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "player_hit",
+      "type": "se",
+      "category": "player_hit",
+      "file": "player_hit.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "base_destroyed",
+      "type": "se",
+      "category": "enemy_hit",
+      "file": "base_destroyed.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "player_jump",
+      "type": "se",
+      "category": "attack",
+      "file": "player_jump.ogg",
+      "loop": false,
+      "gain": 0.8
+    },
+    
+    {
+      "name": "touchdown1",
+      "type": "se",
+      "category": "attack",
+      "file": "touchdown1.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "touchdown2",
+      "type": "se",
+      "category": "attack",
+      "file": "touchdown2.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "touchdown3",
+      "type": "se",
+      "category": "attack",
+      "file": "touchdown3.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "touchdown4",
+      "type": "se",
+      "category": "attack",
+      "file": "touchdown4.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "base_landing",
+      "type": "se",
+      "category": "base_landing",
+      "file": "base_landing.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "player_landing",
+      "type": "se",
+      "category": "player_landing",
+      "file": "player_landing.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "enemy_jump",
+      "type": "se",
+      "category": "enemy_jump",
+      "file": "enemy_jump.ogg",
+      "loop": false,
+      "gain": 0.8
+    },
+    
+    {
+      "name": "enemy_landing",
+      "type": "se",
+      "category": "enemy_landing",
+      "file": "enemy_landing.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "signt",
+      "type": "se",
+      "category": "signt",
+      "file": "signt.ogg",
+      "loop": false,
+      "gain": 1
+    },
+
+    {
+      "name": "danger",
+      "type": "se",
+      "category": "danger",
+      "file": "danger.ogg",
+      "loop": false,
+      "gain": 0.6
+    },
+    
+    {
+      "name": "high_score",
+      "type": "se",
+      "category": "high_score",
+      "file": "high_score.ogg",
+      "loop": false,
+      "gain": 1
+    },
+    
+    {
+      "name": "rank",
+      "type": "se",
+      "category": "rank",
+      "file": "rank.ogg",
+      "loop": false,
+      "gain": 0.7
+    }
+    
+  ],
+
+  "demo_logic": {
+    "delay_gamemain": 2,
+    
+    "demo": {
+      "text": "DEMO PLAY",
+      "pos": [ 0, 30 ],
+      "scale": 7,
+      "layout": "bottom",
+      "view_layout": "bottom"
+    },
+    
+    "demo_speed": 0.8
+  }
+
+}

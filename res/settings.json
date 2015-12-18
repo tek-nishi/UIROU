@@ -1,0 +1,18 @@
+{
+  "version": 1.1,
+  
+  "bgm": true,
+  "se": true,
+
+  "best_score": 0,
+
+  "number_of_played": 0,
+  "time_played": 0,
+  "total_destroyed": 0,
+  "most_once_destroy": 0,
+  "most_combo_hit": 0,
+
+  "all_ranks": {
+  }
+  
+}
