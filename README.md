@@ -24,8 +24,7 @@ iOS、OSX、Windowsの３つの環境で動作します。
 + Windows
 
   VisualStudio2013
-	
-  異なるバージョンのVisualStudioでビルドする場合、assimp 3.1の再ビルドが必要になります。
+
 
 ## あそびかた
 - 攻撃
