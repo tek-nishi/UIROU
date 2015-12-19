@@ -8,12 +8,6 @@
 
 #if defined (_MSC_VER)
 
-// GLFWとGLEWのリンク形式
-#define GLFW_DLL
-#define GLEW_STATIC
-// ASSIMPのリンク形式
-#define ASSIMP_DLL
-
 // TIPS:std::min std::maxを使うために定義しておく
 #define NOMINMAX
 

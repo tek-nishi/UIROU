@@ -24,8 +24,10 @@ iOS、OSX、Windowsの３つの環境で動作します。
 + Windows
 
   VisualStudio2013
-	
-  異なるバージョンのVisualStudioでビルドする場合、assimp 3.1の再ビルドが必要になります。
+
+  注)ソリューションを開いたのち、プロジェクト設定内、「プラットフォーム ツールセット」を適時変更してください。
+
+  ![プロパティ](vc_settings.png "設定画面")
 
 ## あそびかた
 - 攻撃
@@ -42,12 +44,12 @@ iOS、OSX、Windowsの３つの環境で動作します。
 
 ## 利用した外部ライブラリ
 + OpenGL
-+ GLFW 2.7.9
++ GLFW
 + GLEW
 + OpenAL
-+ libpng 1.6.21
-+ zlib 1.2.8
-+ assimp 3.1
++ libpng
++ zlib
++ assimp
 + ogg, oggvorbis
 + tremor
 

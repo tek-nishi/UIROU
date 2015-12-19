@@ -8,6 +8,10 @@
 
 #include "co_defines.hpp"
 
+// GLFWとGLEWのリンク形式(Windows)
+#define GLFW_DLL
+#define GLEW_STATIC
+
 // OpenGL関連のインクルードは順番がある…
 #if defined (_MSC_VER)
 #include <windows.h>
