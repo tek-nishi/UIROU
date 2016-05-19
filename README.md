@@ -23,7 +23,7 @@ iOS、OSX、Windowsの３つの環境で動作します。
 
 + Windows
 
-  VisualStudio2013
+  VisualStudio2015
 
 
 ## あそびかた
